@@ -5,6 +5,10 @@ here](https://polkadot-public.notion.site/Polkadot-SDK-FAQ-fbc4cecc2c46443fb37b9
 
 cargo build --release --target x86_64-unknown-linux-gnu
 
+./substrate-node build-spec --disable-default-bootnode --chain local > customSpec.json
+
+./substrate-node build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json
+
 # Polkadot SDK
 
 ![](https://cms.polkadot.network/content/images/2021/06/1-xPcVR_fkITd0ssKBvJ3GMw.png)
